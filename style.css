@@ -1,0 +1,396 @@
+---------- Basics ----------
+:root {
+  --bg: #12100e;
+  --card: #1c1916;
+  --gold: #c9a35b;
+  --text: #f1ece4;
+  --muted: #a39b8f;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Top bar ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  border-bottom: 1px solid #2a2622;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  color: var(--gold);
+}
+
+.topbar nav a {
+  margin-left: 24px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.topbar nav a:hover { color: var(--gold); }
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 100px 6% 90px;
+}
+
+.tagline {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: normal;
+  line-height: 1.25;
+  margin-bottom: 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  border: 1px solid var(--gold);
+  display: inline-block;
+}
+
+.btn-gold { background: var(--gold); color: #1a1510; }
+.btn-outline { color: var(--gold); }
+.btn:hover { opacity: 0.85; }
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 60px 6%;
+}
+
+.section h2 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.muted { color: var(--muted); text-align: center; }
+
+/* ---------- Perfume cards ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #2a2622;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.card:hover { border-color: var(--gold); }
+
+.card-type {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.card .family {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.card .notes {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.chip {
+  font-size: 0.75rem;
+  background: #2a2622;
+  color: var(--muted);
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price { font-size: 1.2rem; color: var(--gold); }
+.stock { font-size: 0.8rem; }
+.in-stock { color: #7fbf8a; }
+.ask-store { color: #d9a066; }
+
+/* ---------- Visit section ---------- */
+.visit {
+  text-align: center;
+  background: var(--card);
+}
+
+.visit p { margin-bottom: 26px; color: var(--muted); }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .topbar nav a { margin-left: 14px; font-size: 0.85rem; }
+  .hero { padding: 70px 6% 60px; }
+}
+
+/* ===== Brand polish ===== */
+:root {
+  --bg: #0d0b09;
+  --card: #17130f;
+  --gold: #c9a35b;
+  --line: #2b241c;
+  --text: #f3ede3;
+  --muted: #9d9384;
+}
+
+body { font-family: "Inter", system-ui, sans-serif; background: var(--bg); }
+h1, h2, h3, .logo, .price { font-family: "Cormorant Garamond", Georgia, serif; }
+
+/* top bar */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(13, 11, 9, 0.88);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 6%;
+}
+.logo { font-size: 1.7rem; letter-spacing: 10px; font-weight: 500; }
+.topbar nav a { text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; }
+
+/* hero */
+.hero {
+  padding: 150px 6% 130px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(201, 163, 91, 0.2), transparent 60%);
+}
+.tagline { letter-spacing: 8px; font-size: 0.75rem; margin-bottom: 26px; }
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  font-weight: 500;
+  line-height: 1.12;
+  margin-bottom: 44px;
+}
+
+/* buttons */
+.btn {
+  border-radius: 2px;
+  padding: 14px 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  transition: all 0.25s;
+}
+.btn-gold:hover { background: #dcb96f; opacity: 1; }
+.btn-outline:hover { background: var(--gold); color: #1a1510; opacity: 1; }
+
+/* sections */
+.section { max-width: 1200px; margin: 0 auto; padding: 90px 6%; }
+.section h2 { font-size: 2.4rem; font-weight: 500; margin-bottom: 50px; }
+.section h2::after {
+  content: "";
+  display: block;
+  width: 50px; height: 1px;
+  background: var(--gold);
+  margin: 16px auto 0;
+}
+
+/* cards */
+.grid { gap: 26px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 28px 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+.card.fresh  { border-top-color: #5cc2b4; }
+.card.sweet  { border-top-color: #e08ab0; }
+.card.woody  { border-top-color: #b98a5a; }
+.card.spicy  { border-top-color: #e0803c; }
+.card.floral { border-top-color: #b98ad8; }
+
+.card h3 { font-size: 1.6rem; font-weight: 500; margin-bottom: 6px; }
+.price { font-size: 1.5rem; }
+.chip { border: 1px solid var(--line); background: transparent; }
+
+/* visit section */
+.visit {
+  max-width: none;
+  background: linear-gradient(180deg, var(--card), #0d0b09);
+  border-top: 1px solid var(--line);
+}
+.visit p { font-size: 1.05rem; }
+
+@media (max-width: 600px) {
+  .hero { padding: 90px 6% 80px; }
+  .section { padding: 60px 6%; }
+  .logo { letter-spacing: 6px; font-size: 1.3rem; }
+}
+/* ---------- Finder quiz ---------- */
+.finder { max-width: 760px; margin: 0 auto; }
+.q { margin-bottom: 34px; text-align: center; }
+.q-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+.options { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.options input { display: none; }                 /* hide the round radio dot */
+.options span {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.options span:hover { border-color: var(--gold); color: var(--text); }
+.options input:checked + span {                   /* the chosen answer turns gold */
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #1a1510;
+}
+.finder-submit { text-align: center; margin-top: 10px; }
+button.btn { cursor: pointer; font-family: inherit; }
+
+.finder-results { margin-top: 60px; }
+.match {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #7fbf8a;
+  margin-bottom: 8px;
+}
+.try-it {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.try-it a { color: var(--gold); }
+.no-match { grid-column: 1 / -1; text-align: center; color: var(--muted); }
+/* ---------- Learn section ---------- */
+.learn-intro {
+  text-align: center;
+  color: var(--muted);
+  margin: -20px auto 46px;
+  max-width: 560px;
+}
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.learn-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 32px 26px;
+}
+
+.learn-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  padding: 3px 14px;
+  margin-bottom: 16px;
+}
+
+.learn-card h3 { font-size: 1.7rem; font-weight: 500; }
+
+.learn-sub {
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+.learn-card ul { list-style: none; }
+
+.learn-card li {
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.learn-card li b { color: var(--text); font-weight: 500; }
+
+.learn-tip {
+  max-width: 680px;
+  margin: 44px auto 0;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.learn-tip b { color: var(--gold); font-weight: 500; }
