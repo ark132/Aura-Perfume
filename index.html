@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Perfumes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="logo">AURA</div>
+    <nav>
+      <a href="#finder">Find my perfume</a>
+      <a href="#browse">Browse all</a>
+      <a href="#learn">Learn</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+  </header>
+
+  <!-- Hero: the first thing the owner sees -->
+  <section class="hero">
+    <p class="tagline">Aura Perfumes</p>
+    <h1>We understand perfumes.<br>We'll help you find the right one.</h1>
+    <div class="hero-buttons">
+      <a href="#finder" class="btn btn-gold">Find my perfume</a>
+      
+      <a href="#browse" class="btn btn-outline">Browse all</a>
+    </div>
+  </section>
+
+  <!-- Finder: placeholder for Day 2 -->
+ <section id="finder" class="section">
+  <h2>Find your perfume</h2>
+
+  <form id="finder-form" class="finder">
+    <div class="q">
+      <p class="q-title">Where will you wear it?</p>
+      <div class="options">
+        <label><input type="radio" name="occasion" value="college" checked><span>College</span></label>
+        <label><input type="radio" name="occasion" value="office"><span>Office</span></label>
+        <label><input type="radio" name="occasion" value="date"><span>Date night</span></label>
+        <label><input type="radio" name="occasion" value="wedding"><span>Wedding</span></label>
+        <label><input type="radio" name="occasion" value="daily"><span>Daily use</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="q-title">Your budget</p>
+      <div class="options">
+        <label><input type="radio" name="budget" value="700"><span>Under ₹700</span></label>
+        <label><input type="radio" name="budget" value="1000" checked><span>Under ₹1000</span></label>
+        <label><input type="radio" name="budget" value="2000"><span>Under ₹2000</span></label>
+        <label><input type="radio" name="budget" value="3000"><span>Up to ₹3000</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="q-title">What scent do you like?</p>
+      <div class="options">
+        <label><input type="radio" name="family" value="fresh" checked><span>Fresh</span></label>
+        <label><input type="radio" name="family" value="sweet"><span>Sweet</span></label>
+        <label><input type="radio" name="family" value="woody"><span>Woody</span></label>
+        <label><input type="radio" name="family" value="spicy"><span>Spicy</span></label>
+        <label><input type="radio" name="family" value="floral"><span>Floral</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="q-title">How strong?</p>
+      <div class="options">
+        <label><input type="radio" name="intensity" value="subtle" checked><span>Subtle</span></label>
+        <label><input type="radio" name="intensity" value="moderate"><span>Moderate</span></label>
+        <label><input type="radio" name="intensity" value="strong"><span>Strong</span></label>
+      </div>
+    </div>
+
+    <div class="finder-submit">
+      <button type="submit" class="btn btn-gold">Show my matches</button>
+    </div>
+  </form>
+
+  <div id="finder-results" class="grid finder-results"></div>
+</section>
+<section id="learn" class="section">
+  <h2>EDT, EDP or Attar?</h2>
+  <p class="learn-intro">The name on the bottle tells you how strong it is and how long it lasts.</p>
+
+  <div class="learn-grid">
+    <div class="learn-card">
+      <span class="learn-tag">EDT</span>
+      <h3>Eau de Toilette</h3>
+      <p class="learn-sub">Light and fresh</p>
+      <ul>
+        <li><b>Strength:</b> about 5-15% perfume oil</li>
+        <li><b>Lasts:</b> around 3-5 hours</li>
+        <li><b>Feels like:</b> airy, easy, not overpowering</li>
+        <li><b>Good for:</b> college, daily use, hot days</li>
+      </ul>
+    </div>
+
+    <div class="learn-card">
+      <span class="learn-tag">EDP</span>
+      <h3>Eau de Parfum</h3>
+      <p class="learn-sub">Richer and longer lasting</p>
+      <ul>
+        <li><b>Strength:</b> about 15-20% perfume oil</li>
+        <li><b>Lasts:</b> around 5-8 hours</li>
+        <li><b>Feels like:</b> deeper, with more presence</li>
+        <li><b>Good for:</b> office, dates, weddings, evenings</li>
+      </ul>
+    </div>
+
+    <div class="learn-card">
+      <span class="learn-tag">Attar</span>
+      <h3>Attar (Ittar)</h3>
+      <p class="learn-sub">Pure oil, no alcohol</p>
+      <ul>
+        <li><b>Strength:</b> concentrated perfume oil</li>
+        <li><b>Lasts:</b> often 8 hours or more</li>
+        <li><b>Feels like:</b> warm, close to the skin</li>
+        <li><b>Good for:</b> festivals, weddings, daily wear in small amounts</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="learn-tip">
+    <b>Not sure?</b> Start with an EDT for everyday wear, an EDP for special occasions,
+    and an attar if you like a rich, traditional scent. Come to our City Chowk shop and smell all three.
+  </p>
+</section>
+  <!-- Browse: cards are created by script.js from perfumes.json -->
+  <section id="browse" class="section">
+    <h2>Our collection</h2>
+    <div id="perfume-grid" class="grid"></div>
+  </section>
+
+  <!-- Visit: links the website to the physical shop -->
+  <section id="visit" class="section visit">
+    <h2>Come smell it before you buy it</h2>
+    <p id="store-info"></p>
+    <div class="hero-buttons">
+      <a id="directions-btn" class="btn btn-gold" target="_blank">Get directions</a>
+      <a id="whatsapp-btn" class="btn btn-outline" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>Demo website for Aura Perfumes</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
