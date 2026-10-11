@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ocean Breeze",
+    "brand": "Placeholder Brand",
+    "type": "EDT",
+    "price": 599,
+    "family": "fresh",
+    "intensity": "subtle",
+    "occasions": ["college", "daily"],
+    "notes": ["lemon", "sea salt", "musk"],
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Citrus Splash",
+    "brand": "Placeholder Brand",
+    "type": "EDT",
+    "price": 699,
+    "family": "fresh",
+    "intensity": "moderate",
+    "occasions": ["college", "office", "daily"],
+    "notes": ["bergamot", "grapefruit", "green tea"],
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Vanilla Crush",
+    "brand": "Placeholder Brand",
+    "type": "EDT",
+    "price": 799,
+    "family": "sweet",
+    "intensity": "moderate",
+    "occasions": ["college", "date"],
+    "notes": ["vanilla", "caramel", "tonka bean"],
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "Office Classic",
+    "brand": "Placeholder Brand",
+    "type": "EDP",
+    "price": 1299,
+    "family": "woody",
+    "intensity": "moderate",
+    "occasions": ["office", "daily"],
+    "notes": ["cedar", "vetiver", "light musk"],
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Spice Route",
+    "brand": "Placeholder Brand",
+    "type": "EDP",
+    "price": 1899,
+    "family": "spicy",
+    "intensity": "strong",
+    "occasions": ["date", "wedding"],
+    "notes": ["cardamom", "black pepper", "amber"],
+    "inStock": false
+  },
+  {
+    "id": 6,
+    "name": "Rose Garden",
+    "brand": "Placeholder Brand",
+    "type": "EDP",
+    "price": 1599,
+    "family": "floral",
+    "intensity": "moderate",
+    "occasions": ["date", "wedding", "office"],
+    "notes": ["rose", "peony", "white musk"],
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "name": "Midnight Oud",
+    "brand": "Placeholder Brand",
+    "type": "EDP",
+    "price": 2999,
+    "family": "woody",
+    "intensity": "strong",
+    "occasions": ["wedding", "date"],
+    "notes": ["oud", "amber", "vanilla"],
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Musk Rani",
+    "brand": "Placeholder Brand",
+    "type": "Attar",
+    "price": 549,
+    "family": "sweet",
+    "intensity": "subtle",
+    "occasions": ["daily", "college"],
+    "notes": ["white musk", "jasmine"],
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "name": "Chandan Classic",
+    "brand": "Placeholder Brand",
+    "type": "Attar",
+    "price": 999,
+    "family": "woody",
+    "intensity": "moderate",
+    "occasions": ["daily", "office", "wedding"],
+    "notes": ["sandalwood", "cedar"],
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "name": "Royal Oud Attar",
+    "brand": "Placeholder Brand",
+    "type": "Attar",
+    "price": 2500,
+    "family": "woody",
+    "intensity": "strong",
+    "occasions": ["wedding", "date"],
+    "notes": ["agarwood", "rose", "amber"],
+    "inStock": false
+  }
+]
